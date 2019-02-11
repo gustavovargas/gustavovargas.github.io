@@ -1,9 +1,6 @@
 ## Bienvenido a mi página
 
-![Foto_Gustavo](images/IMG_5729.jpg)
-
 <img src="images/IMG_5729.jpg" width="200">
-
 
 Soy Gustavo Vargas, estudiante del máster en Data Science en [AFI Escuela de Finanzas](https://www.afiescueladefinanzas.es/).
 
