@@ -29,43 +29,43 @@
         }],
     "tutoriales": [{
             "title": "Tutorial de expresiones regulares",
-            "link": "../files/expresiones_regulares.html",
+            "link": ".files/expresiones_regulares.html",
             "date": "[python]"
         }],
     "traducciones": [
         {
             "title": "Antal Fekete - Análisis del desequilibrio en la formación de precios",
-            "link": "../files/Fekete-Análisis_del_desequilibrio_en_la_formación_de_precios.pdf",
+            "link": "files/Fekete-Análisis_del_desequilibrio_en_la_formación_de_precios.pdf",
             "date": "Revisión técnica. Autora: Sara Marín"
         },
         {
             "title": "Bryan Caplan - Razones para no ser un economista austriaco",
-            "link": "../files/Caplan-Razones_para_no_ser_un_economista_austriaco.pdf",
+            "link": "files/Caplan-Razones_para_no_ser_un_economista_austriaco.pdf",
             "date": "Revisión técnica. Autora: Sara Marín"
         },
         {
             "title": "Antal Fekete - Los Errores de Mises",
-            "link": "../files/Fekete-Los_Errores_de_Mises.pdf",
+            "link": "files/Fekete-Los_Errores_de_Mises.pdf",
             "date": "Revisión técnica. Autora: Sara Marín"
         },
         {
             "title": "Henry Hazlitt - La Economía en una Lección",
-            "link": "../files/Hazlitt-La_Economía_en_una_Lección.pdf",
+            "link": "files/Hazlitt-La_Economía_en_una_Lección.pdf",
             "date": "Revisión y corrección. Autor: Adolfo Rivero"
         },
         {
             "title": "James Buchanan - Notas sobre Hayek",
-            "link": "../files/Buchanan_Notas_sobre_Hayek.pdf",
+            "link": "files/Buchanan_Notas_sobre_Hayek.pdf",
             "date": "Traducción"
         },
         {
             "title": "Melchior Palyi - Liquidez",
-            "link": "../files/Palyi-Liquidez.pdf",
+            "link": "files/Palyi-Liquidez.pdf",
             "date": "Traducción"
         },
         {
             "title": "Vernon Smith - La Acción Humana, 50 años después",
-            "link": "../files/Smith-La_Acción_Humana_50_años_después.pdf",
+            "link": "files/Smith-La_Acción_Humana_50_años_después.pdf",
             "date": "Traductor"
         }
     ],
