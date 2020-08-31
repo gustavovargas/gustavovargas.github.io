@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
+    <div class="js-fullheight d-flex justify-content-left align-items-center">
+        <div class="text text-left">
+            <ul style="padding-left: 120px;">
+            {% for articulo in config.tutoriales %}
+                <li class="h3">{{ articulo.title }}</li>
+                <a href="{{ articulo.link }}" target="_blank">Link</a><p class="text-muted">{{ articulo.date }}</p>
+                </br>
+            {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}

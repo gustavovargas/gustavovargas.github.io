@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url(../images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+    </div>
+    <div class="js-fullheight d-flex justify-content-center align-items-center">
+        <div class="col-md-8 text text-center">
+            <div class="img mb-4" style="background-image: url(../images/foto_gustavo_02.jpg);">
+            </div>
+            <div class="desc">
+                <h2 class="subheading">Hola, soy</h2>
+                <h1 class="mb-4"> {{ config.web_metadata.title }}</h1>
+                <p class="mb-4">{{ config.web_metadata.description_frontcover }}</p>
+                <p><a href="sobremi.html" class="btn-custom">Más sobre mi<span class="ion-ios-arrow-forward"></span></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

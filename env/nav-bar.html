@@ -1,0 +1,26 @@
+<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+    <h1 id="colorlib-logo"><a href="index.html">{{ config.navbar.title }}<span>.</span></a></h1>
+    <nav id="colorlib-main-menu" role="navigation">
+        <ul>
+            {% for key, value in config.navbar.pages.items() %}
+                {% if key == page_name%}
+                    <li class="colorlib-active"><a href="{{ key }}.html">{{ value }}</a></li>
+                {% else %}
+                    <li><a href="{{ key }}.html">{{ value }}</a></li>
+                {% endif%}
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <div class="colorlib-footer">
+        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Plantilla hecha por <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <ul>
+            <li><a href="https://twitter.com/gvarnu"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/gvarnu/"><i class="icon-instagram"></i></a></li>
+            <li><a href="https://github.com/gustavovargas"><i class="icon-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/gustavovargas2/"><i class="icon-linkedin"></i></a></li>
+        </ul>
+    </div>
+</aside> <!-- END COLORLIB-ASIDE -->
