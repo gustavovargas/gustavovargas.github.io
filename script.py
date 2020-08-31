@@ -12,7 +12,7 @@ with open('config.json', encoding="utf-8") as config_file:
 # tipo: portada, output:index
 template = template_env.get_template('portada.html')
 
-with open('site/index.html', 'w') as output_file:
+with open('index.html', 'w') as output_file:
     output_file.write(
         template.render(
             config=config,
@@ -24,7 +24,7 @@ with open('site/index.html', 'w') as output_file:
 # tipo: lista, output:artículos
 template = template_env.get_template('lista.html')
 
-with open('site/articulos.html', 'w') as output_file:
+with open('articulos.html', 'w') as output_file:
     output_file.write(
         template.render(
             config=config,
@@ -37,7 +37,7 @@ with open('site/articulos.html', 'w') as output_file:
 # tipo: lista, output:artículos
 template = template_env.get_template('tutoriales.html')
 
-with open('site/tutoriales.html', 'w') as output_file:
+with open('tutoriales.html', 'w') as output_file:
     output_file.write(
         template.render(
             config=config,
@@ -49,7 +49,7 @@ with open('site/tutoriales.html', 'w') as output_file:
 # tipo: lista, output:artículos
 template = template_env.get_template('traducciones.html')
 
-with open('site/traducciones.html', 'w') as output_file:
+with open('traducciones.html', 'w') as output_file:
     output_file.write(
         template.render(
             config=config,
@@ -61,7 +61,7 @@ with open('site/traducciones.html', 'w') as output_file:
 # tipo: lista, output:artículos
 template = template_env.get_template('otros.html')
 
-with open('site/otros.html', 'w') as output_file:
+with open('otros.html', 'w') as output_file:
     output_file.write(
         template.render(
             config=config,
@@ -73,7 +73,7 @@ with open('site/otros.html', 'w') as output_file:
 # tipo: cuadro, output:sobremi
 template = template_env.get_template('cuadro.html')
 
-with open('site/sobremi.html', 'w') as output_file:
+with open('sobremi.html', 'w') as output_file:
     output_file.write(
         template.render(
             config=config,
