@@ -29,7 +29,7 @@
         }],
     "tutoriales": [{
             "title": "Tutorial de expresiones regulares",
-            "link": ".files/expresiones_regulares.html",
+            "link": "files/expresiones_regulares.html",
             "date": "[python]"
         }],
     "traducciones": [
