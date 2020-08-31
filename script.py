@@ -12,7 +12,7 @@ with open('config.json', encoding="utf-8") as config_file:
 # tipo: portada, output:index
 template = template_env.get_template('portada.html')
 
-with open('index.html', 'w', encoding="windows-1252") as output_file:
+with open('index.html', 'w', encoding="utf-8") as output_file:
     output_file.write(
         template.render(
             config=config,
