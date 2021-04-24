@@ -4,7 +4,7 @@
         "image": "https://raw.githubusercontent.com/gustavovargas/gustavovargas.github.io/master/images/author.jpg",
         "url": "https://gustavovargas.github.io/index.html",
         "description": "Data Scientist",
-        "description_frontcover": "Data Scientist en ETS Asset Management Factory. Master en Data Science y Big Data por AFI. Experiencia en el desarrollo de GANS para series temporales"
+        "description_frontcover": "Data Scientist en EY Wavespace. Master en Data Science y Big Data por AFI. Experiencia en el desarrollo de GANS para series generar series temporales sintéticas usando deep learning"
     },
     "navbar":{
         "title": "gustavo",
