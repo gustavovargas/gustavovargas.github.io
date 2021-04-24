@@ -4,3 +4,12 @@ Página web personal. Podéis acceder a través de este [link](https://gustavova
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
+
+Si quieres crear tu propia web a partir de estos datos, solo ten en cuenta los siguientes puntos:
+- El archivo principal a partir del que se generan el resto es `script.py`. Crea el environment desde `environment.yml`, con ello podrás ejecutar el script.
+- Muchas modificaciones de ccontenido las puedes hacer cambiando el archivo `config.json`.
+- Las plantillas a partir de las que se genera el resto de archivos están dentro de la carpeta `env`. Si necesitas modificarlas, modifícalas aquí. Ten en cuenta que aquí hemos usado simplemente Bootstrap, por su sencillez.
+- He ido separando los archivos en dos carpetas: `files` e `images`. No es necesario que sigas ese orden, pero entiendo que viene bien.
+- Usamos Github Pages, por lo que no se puede utilizar ningún backend. Es lo que tiene el hosting gratuito.
+
+Si tienes mejoras o quieres avisarme de alguna errata, escríbeme a ge.vargasn@gmail.com. Encantado de comentarlo.
