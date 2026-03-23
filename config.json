@@ -3,8 +3,8 @@
         "title": "Gustavo Vargas Núñez",
         "image": "https://raw.githubusercontent.com/gustavovargas/gustavovargas.github.io/master/images/author.jpg",
         "url": "https://gustavovargas.github.io/index.html",
-        "description": "Data Scientist",
-        "description_frontcover": "Data Scientist en Kairós Digital Solutions. Master en Data Science y Big Data por AFI. Experiencia en el desarrollo y despliegue de modelos de Machine Learning en servicios cloud"
+        "description": "Data Engineer & Data Scientist",
+        "description_frontcover": "Data Engineer & Data Scientist en Kairós Digital Solutions. Master en Data Science y Big Data por AFI. Certificado como Google Cloud Professional Data Engineer"
     },
     "navbar":{
         "title": "gustavo",
