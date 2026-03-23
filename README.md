@@ -6,7 +6,12 @@ Página web personal. Podéis acceder a través de este [link](https://gustavova
 
 
 Si quieres crear tu propia web a partir de estos datos, solo ten en cuenta los siguientes puntos:
-- El archivo principal a partir del que se generan el resto es `script.py`. Crea el environment desde `environment.yml`, con ello podrás ejecutar el script. Cambia el prefix por la dirección donde se guardan tus entornos de conda. Esto lo puedes consultar haciendo `conda env list`
+- El archivo principal a partir del que se generan el resto es `script.py`. Crea un entorno virtual y instala las dependencias:
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install -r requirements.txt
+  ```
 - Muchas modificaciones de contenido las puedes hacer cambiando el archivo `config.json`, a excepción del apartado `Sobre mí`
 - Las plantillas a partir de las que se genera el resto de archivos están dentro de la carpeta `env`. Si necesitas modificarlas, modifícalas aquí. Ten en cuenta que aquí hemos usado simplemente Bootstrap, por su sencillez.
 - Si quieres añadir o quitar páginas, hazlo desde `script.py`, usando las plantillas de `env`. Puedes indicar qué datos añadir desde el archivo `config.py`.
