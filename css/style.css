@@ -7450,11 +7450,23 @@ h1, h2, h3, h4, h5,
 #colorlib-main {
   width: 100%;
   float: right;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease; }
+  #colorlib-main .hero-wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
   @media (min-width: 992px) {
     #colorlib-main {
       width: 75%; } }
@@ -8542,12 +8554,170 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-/* Responsive content lists */
-.content-list {
-  padding-left: 120px;
-  padding-right: 30px; }
+/* Fluid typography */
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h3 { font-size: clamp(1.1rem, 2vw, 1.25rem); }
+
+/* Content container max-width for readability */
+.content-container {
+  max-width: 800px;
+  margin: 0 auto; }
+
+/* Content section shared layout */
+.content-section {
+  padding: 60px 30px 40px; }
+
+/* Content cards for list pages */
+.content-card {
+  padding: 24px 28px;
+  margin-bottom: 12px;
+  border-left: 3px solid transparent;
+  border-radius: 0 8px 8px 0;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+
+.content-card:hover {
+  border-left-color: #f05d23;
+  background: rgba(0, 0, 0, 0.02);
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+
+.content-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.content-card h3 {
+  margin-bottom: 0; }
+
+.content-card h3 a {
+  color: #1a1a2e;
+  text-decoration: none;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 1px;
+  -webkit-transition: color 0.25s ease, border-color 0.25s ease;
+  -o-transition: color 0.25s ease, border-color 0.25s ease;
+  transition: color 0.25s ease, border-color 0.25s ease; }
+
+.content-card h3 a:hover {
+  color: #f05d23;
+  border-bottom-color: #f05d23;
+  text-decoration: none; }
+
+.content-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 4px; }
+
+.content-description {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 6px;
+  margin-bottom: 0;
+  line-height: 1.5; }
+
+/* Content type badges */
+.content-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap; }
+
+.badge-pdf {
+  background: #fef2f2;
+  color: #dc2626; }
+
+.badge-video {
+  background: #fef3c7;
+  color: #d97706; }
+
+/* CTA button */
+.btn-custom-cta {
+  display: inline-block;
+  padding: 10px 28px;
+  border: 2px solid #f05d23;
+  border-radius: 4px;
+  color: #f05d23;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+
+.btn-custom-cta:hover {
+  background: #f05d23;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px); }
+
+.btn-custom-cta:active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+
+/* About page header with photo */
+.about-header .img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center; }
+
+/* About page sections */
+.about-bio {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.75;
+  margin-bottom: 30px; }
+
+.about-bio p {
+  margin-bottom: 15px; }
+
+.about-section {
+  padding-top: 28px;
+  margin-bottom: 10px;
+  border-top: 1px solid #e5e7eb; }
+
+.about-section h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #000000;
+  letter-spacing: -0.01em; }
+
+.about-section ul {
+  padding-left: 20px; }
+
+.about-section ul li {
+  margin-bottom: 8px;
+  line-height: 1.6; }
 
 @media (max-width: 767.98px) {
-  .content-list {
-    padding-left: 20px;
-    padding-right: 15px; } }
+  .content-section {
+    padding: 40px 15px 30px; }
+  .content-card {
+    padding: 20px 15px; }
+  .about-header .img {
+    width: 120px;
+    height: 120px; } }

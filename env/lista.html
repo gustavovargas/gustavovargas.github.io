@@ -2,16 +2,26 @@
 
 {% block content %}
 <div class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
-    <div class="js-fullheight d-flex justify-content-start align-items-center">
-        <div class="text text-left">
-            <ul class="content-list">
+    <div class="content-section">
+        <div class="content-container">
             {% for articulo in config.articulos %}
-                <li class="h3">{{ articulo.title }}</li>
-                <a href="{{ articulo.link }}" target="_blank">Link</a><p class="text-muted">{{ articulo.date }}</p>
-                <br>
+            <div class="content-card ftco-animate">
+                <div class="content-card-header">
+                    <h3><a href="{{ articulo.link }}" target="_blank">{{ articulo.title }}</a></h3>
+                    {% if articulo.type == 'pdf' %}
+                    <span class="content-badge badge-pdf">PDF</span>
+                    {% elif articulo.type == 'video' %}
+                    <span class="content-badge badge-video">Video</span>
+                    {% endif %}
+                </div>
+                {% if articulo.date %}
+                <span class="content-date">{{ articulo.date }}</span>
+                {% endif %}
+                {% if articulo.description %}
+                <p class="content-description">{{ articulo.description }}</p>
+                {% endif %}
+            </div>
             {% endfor %}
-            </ul>
-
         </div>
     </div>
 </div>

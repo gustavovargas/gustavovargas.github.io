@@ -2,55 +2,47 @@
 
 {% block content %}
 <div class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
-    <div class="d-flex" style="padding-right: 30px;padding-left: 30px;margin-top: 50px;">
-        <div class="container">
-            <div class="row text-center justify-content-center">
-                <div class="col">
-                    <div class="desc">
-                        <h2 class="subheading">Hola, soy</h2>
-                        <h1 class="mb-4"> {{ config.web_metadata.title }}</h1>
-                    </div>
-                </div>
+    <div class="content-section">
+        <div class="content-container">
+            <div class="about-header text-center ftco-animate">
+                <div class="img mb-4" style="background-image: url(images/foto_gustavo_02.jpg);"></div>
+                <h2 class="subheading">Hola, soy</h2>
+                <h1 class="mb-4">{{ config.web_metadata.title }}</h1>
             </div>
-            <div class="row">
-                <div class="col">
-                    Soy Gustavo Vargas, trabajo como Data Scientist en Kairós Digital Solutions.
-                    <br><br>
-                    Me he especializado en proyectos de desarrollo y despliegue de modelos de Machine Learning y Deep Learning en la nube, usando MLFlow y AirFlow, en entornos como Azure ML o Vertex AI. Si estás comenzando en el mundo del data science, no dudes en ponerte en contacto conmigo si necesitas algún consejo.
-                </div>
+
+            <div class="about-bio ftco-animate">
+                <p>Soy Gustavo Vargas, trabajo como Data Scientist en Kairós Digital Solutions.</p>
+                <p>Me he especializado en proyectos de desarrollo y despliegue de modelos de Machine Learning y Deep Learning en la nube, usando MLFlow y AirFlow, en entornos como Azure ML o Vertex AI. Si estás comenzando en el mundo del data science, no dudes en ponerte en contacto conmigo si necesitas algún consejo.</p>
+                <a href="files/cv_gustavo_vargas.pdf" target="_blank" class="btn-custom-cta">Curriculum vitae <span class="ion-ios-arrow-forward"></span></a>
             </div>
-            <br>
 
-            <a href="files/cv_gustavo_vargas.pdf" target="_blank" class="btn btn-primary">
-                Curriculum vitae
-            </a>
-            <br><br>
+            <div class="about-section ftco-animate">
+                <h4>Educación</h4>
+                <ul>
+                    <li>Máster en Data Science y Big Data en Finanzas - AFI Escuela de Finanzas</li>
+                    <li>Grado en Economía - Universidad Nacional de Educación a Distancia. Finalización: jun-2023</li>
+                    <li>Diploma en Análisis Financiero - Universidad Nacional Mayor de San Marcos</li>
+                    <li>Arquitecto Técnico - Universidad Politécnica de Madrid</li>
+                </ul>
+            </div>
 
-            <div class="row">
-                <div class="col">
-                    <h5>Educación</h5>
-                    <ul>
-                        <li>Máster en Data Science y Big Data en Finanzas - AFI Escuela de Finanzas</li>
-                        <li>Grado en Economía - Universidad Nacional de Educación a Distancia. Finalización: jun-2023</li>
-                        <li>Diploma en Análisis Financiero - Universidad Nacional Mayor de San Marcos</li>
-                        <li>Arquitecto Técnico - Universidad Politécnica de Madrid</li>
-                    </ul>
+            <div class="about-section ftco-animate">
+                <h4>Intereses</h4>
+                <ul>
+                    <li>Deep learning aplicado a series temporales</li>
+                    <li>Economía: Teoría Monetaria, Inferencia causal</li>
+                    <li>Filosofía política</li>
+                </ul>
+            </div>
 
-                    <h5>Intereses</h5>
-                    <ul>
-                        <li>Deep learning aplicado a series temporales</li>
-                        <li>Economía: Teoría Monetaria, Inferencia causal</li>
-                        <li>Filosofía política</li>
-                    </ul>
-
-                    <h5>Grupos preferidos</h5>
-                    <ul>
-                        <li>Queen</li>
-                        <li>Belle and Sebastian</li>
-                        <li>Have Heart</li>
-                        <li>Crema / C Tangana</li>
-                    </ul>
-                </div>
+            <div class="about-section ftco-animate">
+                <h4>Grupos preferidos</h4>
+                <ul>
+                    <li>Queen</li>
+                    <li>Belle and Sebastian</li>
+                    <li>Have Heart</li>
+                    <li>Crema / C Tangana</li>
+                </ul>
             </div>
         </div>
     </div>

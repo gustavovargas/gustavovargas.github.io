@@ -17,93 +17,114 @@
             "sobremi": "Sobre mí"
         }
     },
-    "articulos": [{
+    "articulos": [
+        {
+            "title": "Reinforcement Learning for Trading",
+            "link": "https://quantdare.com/reinforcement-learning-for-trading/",
+            "date": "16/12/2020",
+            "type": "link"
+        },
+        {
             "title": "Generating OHLC bars with Generative Adversarial Networks",
             "link": "https://quantdare.com/generating-open-high-low-close-bars-with-gans",
-            "date": "30/01/2020"
+            "date": "30/01/2020",
+            "type": "link"
         },
         {
             "title": "Geometrical evaluation of Generative Adversarial Networks",
             "link": "https://quantdare.com/geometrical-properties-of-generative-adversarial-networks",
-            "date": "24/07/2019"
-        },
+            "date": "24/07/2019",
+            "type": "link"
+        }
+    ],
+    "tutoriales": [
         {
-            "title": "Reinforcement Learning for Trading\n",
-            "link": "https://quantdare.com/reinforcement-learning-for-trading/",
-            "date": "16/12/2020"
-        }],
-    "tutoriales": [{
             "title": "Tutorial de expresiones regulares",
             "link": "files/expresiones_regulares.html",
-            "date": "[python]"
-        }],
+            "description": "Python",
+            "type": "link"
+        }
+    ],
     "traducciones": [
         {
             "title": "Antal Fekete - Análisis del desequilibrio en la formación de precios",
             "link": "files/Fekete-Análisis_del_desequilibrio_en_la_formación_de_precios.pdf",
-            "date": "Revisión técnica. Autora: Sara Marín"
+            "description": "Revisión técnica. Autora: Sara Marín",
+            "type": "pdf"
         },
         {
             "title": "Bryan Caplan - Razones para no ser un economista austriaco",
             "link": "files/Caplan-Razones_para_no_ser_un_economista_austriaco.pdf",
-            "date": "Revisión técnica. Autora: Sara Marín"
+            "description": "Revisión técnica. Autora: Sara Marín",
+            "type": "pdf"
         },
         {
             "title": "Antal Fekete - Los Errores de Mises",
             "link": "files/Fekete-Los_Errores_de_Mises.pdf",
-            "date": "Revisión técnica. Autora: Sara Marín"
+            "description": "Revisión técnica. Autora: Sara Marín",
+            "type": "pdf"
         },
         {
             "title": "Henry Hazlitt - La Economía en una Lección",
             "link": "files/Hazlitt-La_Economía_en_una_Lección.pdf",
-            "date": "Revisión y corrección. Autor: Adolfo Rivero"
+            "description": "Revisión y corrección. Autor: Adolfo Rivero",
+            "type": "pdf"
         },
         {
             "title": "James Buchanan - Notas sobre Hayek",
             "link": "files/Buchanan_Notas_sobre_Hayek.pdf",
-            "date": "Traductor"
+            "description": "Traductor",
+            "type": "pdf"
         },
         {
             "title": "Melchior Palyi - Liquidez",
             "link": "files/Palyi-Liquidez.pdf",
-            "date": "Traductor"
+            "description": "Traductor",
+            "type": "pdf"
         },
         {
             "title": "Vernon Smith - La Acción Humana, 50 años después",
             "link": "files/Smith-La_Acción_Humana_50_años_después.pdf",
-            "date": "Traductor"
+            "description": "Traductor",
+            "type": "pdf"
         }
     ],
     "otros": [
         {
             "title": "'Principios de Economía Financiera' de Rafael García Iborra",
             "link": "https://www.youtube.com/watch?v=I8VopPYfZ0U",
-            "date": "Acompañé al autor en la presentación de su libro, donde expone una microfundamentación de su teoría del ciclo económico donde recurre a muchas ideas de la teoría financiera actual"
+            "description": "Acompañé al autor en la presentación de su libro, donde expone una microfundamentación de su teoría del ciclo económico donde recurre a muchas ideas de la teoría financiera actual",
+            "type": "video"
         },
         {
             "title": "Otra Vuelta de Tuerka - ¿Por qué votan los ancianos a sus verdugos?",
             "link": "https://www.youtube.com/watch?v=cvYFXaQK3Qc",
-            "date": "Participé en el programa Otra Vuelta de Tuerka donde debatimos sobre el futuro de las pensiones"
+            "description": "Participé en el programa Otra Vuelta de Tuerka donde debatimos sobre el futuro de las pensiones",
+            "type": "video"
         },
         {
             "title": "Entrevista a Daniel Fernández sobre teoría monetaria",
             "link": "https://www.youtube.com/watch?v=VC5Z20y5_x4",
-            "date": "Entrevista sobre teoría monetaria y bancaria con el experto Daniel Fernández"
+            "description": "Entrevista sobre teoría monetaria y bancaria con el experto Daniel Fernández",
+            "type": "video"
         },
         {
             "title": "Debate sobre el aborto",
             "link": "https://www.youtube.com/watch?v=dV3GvNRixcw",
-            "date": "Modero un debate sobre el aborto, con José Luis Ricón, Eladio García y José Augusto Domínguez como invitados"
+            "description": "Modero un debate sobre el aborto, con José Luis Ricón, Eladio García y José Augusto Domínguez como invitados",
+            "type": "video"
         },
         {
             "title": "Diez años del Juan de Mariana",
             "link": "https://www.youtube.com/watch?v=sxFEzmZMnPM",
-            "date": "Hablo con Francisco Capella y Jorge García sobre los 10 primeros años del Instituto Juan de Mariana"
+            "description": "Hablo con Francisco Capella y Jorge García sobre los 10 primeros años del Instituto Juan de Mariana",
+            "type": "video"
         },
         {
             "title": "Debate sobre la Teoría Monetaria Moderna",
             "link": "https://www.youtube.com/watch?v=mb2rq2JOwJA",
-            "date": "Modero el debate entre los economistas Eduardo Garzón y Juan Ramón Rallo sobre la teoría monetaria moderna"
+            "description": "Modero el debate entre los economistas Eduardo Garzón y Juan Ramón Rallo sobre la teoría monetaria moderna",
+            "type": "video"
         }
     ]
 }
