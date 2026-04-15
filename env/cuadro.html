@@ -1,74 +1,67 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
+<div class="hero-wrap hero-wrap-2">
     <div class="content-section">
         <div class="content-container">
-            <div class="about-header text-center ftco-animate">
-                <div class="img mb-4" style="background-image: url(images/foto_gustavo_02.jpg);"></div>
-                <h2 class="subheading">Hola, soy</h2>
-                <h1 class="mb-4">{{ config.web_metadata.title }}</h1>
+            <header class="about-header text-center">
+                <img src="images/foto_gustavo_02.jpg" alt="Retrato de Gustavo Vargas" class="about-photo" width="160" height="160">
+                <p class="subheading">Hola, soy</p>
+                <h1>{{ config.web_metadata.title }}</h1>
+            </header>
+
+            <div class="about-bio">
+                <p>Soy data engineer y AI engineer en Kairós Digital Solutions. Diseño pipelines y pongo en producción servicios de datos y de IA, sobre todo con Python, SQL y ClickHouse. Últimamente trabajo bastante con LLMs (OpenAI, LangChain), lo que me conecta de nuevo con mi etapa previa como Machine Learning Engineer y Data Scientist.</p>
+                <p>Llegué a los datos desde la economía, y sigo escribiendo y traduciendo sobre teoría monetaria, finanzas y política. Si estás comenzando y necesitas algún consejo, escríbeme.</p>
+                <a href="files/cv_gustavo_vargas_en_01_2026.pdf" target="_blank" rel="noopener" class="btn-custom-cta">Curriculum vitae <span class="ion-ios-arrow-forward" aria-hidden="true"></span></a>
             </div>
 
-            <div class="about-bio ftco-animate">
-                <p>Soy Gustavo Vargas, trabajo como Data Engineer y Data Scientist en Kairós Digital Solutions.</p>
-                <p>He trabajado en el diseño y construcción de pipelines de datos, así como en el desarrollo y despliegue de modelos de Machine Learning y Deep Learning en la nube, con herramientas como MLFlow, AirFlow, y entornos como Azure ML o Vertex AI. Si estás comenzando en el mundo de los datos, no dudes en ponerte en contacto conmigo si necesitas algún consejo.</p>
-                <a href="files/cv_gustavo_vargas.pdf" target="_blank" class="btn-custom-cta">Curriculum vitae <span class="ion-ios-arrow-forward"></span></a>
-            </div>
-
-            <div class="about-section ftco-animate">
-                <h4>Experiencia</h4>
+            <section class="about-section">
+                <h2>Experiencia</h2>
                 <div class="experience-list">
                     <div class="experience-item">
                         <span class="experience-role">Data Engineer</span>
-                        <span class="experience-detail">Kairós Digital Solutions - 2022-actualidad</span>
-                    </div>
-                    <div class="experience-item">
-                        <span class="experience-role">Ayudante de cátedra</span>
-                        <span class="experience-detail">Universidad de las Hespérides - 2024-actualidad</span>
+                        <span class="experience-detail">Kairós Digital Solutions · 2022–actualidad</span>
                     </div>
                     <div class="experience-item">
                         <span class="experience-role">Machine Learning Engineer</span>
-                        <span class="experience-detail">EY - 2021-2022</span>
+                        <span class="experience-detail">EY · 2021–2022</span>
                     </div>
                     <div class="experience-item">
                         <span class="experience-role">Data Scientist</span>
-                        <span class="experience-detail">ETS Asset Management Factory - 2019-2021</span>
+                        <span class="experience-detail">ETS Asset Management Factory · 2019–2021</span>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="about-section ftco-animate">
-                <h4>Certificaciones</h4>
+            <section class="about-section">
+                <h2>Stack técnico</h2>
+                <p class="inline-list">Python · SQL · ClickHouse · Snowflake · Airflow · Docker · Kubernetes · Terraform · GitLab CI · Google Cloud · Tableau · LangChain · OpenAI</p>
+            </section>
+
+            <section class="about-section">
+                <h2>Educación</h2>
                 <ul>
-                    <li>Google Cloud Certified - Professional Data Engineer</li>
-                    <li>Google Cloud Certified - Associate Cloud Engineer</li>
+                    <li>Máster en Data Science y Big Data en Finanzas &mdash; AFI Escuela de Finanzas (2018–2019)</li>
+                    <li>Grado en Economía &mdash; Universidad Nacional de Educación a Distancia (2014–2023)</li>
+                    <li>Arquitectura Técnica &mdash; Universidad Politécnica de Madrid (2007–2012)</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="about-section ftco-animate">
-                <h4>Educación</h4>
+            <section class="about-section">
+                <h2>Intereses</h2>
                 <ul>
-                    <li>Máster en Data Science y Big Data en Finanzas - AFI Escuela de Finanzas (2018-2019)</li>
-                    <li>Grado en Economía - Universidad Nacional de Educación a Distancia</li>
-                    <li>Diploma en Análisis Financiero - Universidad Nacional Mayor de San Marcos</li>
-                    <li>Arquitecto Técnico - Universidad Politécnica de Madrid</li>
-                </ul>
-            </div>
-
-            <div class="about-section ftco-animate">
-                <h4>Intereses</h4>
-                <ul>
+                    <li>LLMs y su integración en flujos de datos</li>
                     <li>Deep learning aplicado a series temporales</li>
-                    <li>Economía: Teoría Monetaria, Inferencia causal</li>
+                    <li>Teoría monetaria e inferencia causal</li>
                     <li>Filosofía política</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="about-section ftco-animate">
-                <h4>Grupos preferidos</h4>
+            <section class="about-section">
+                <h2>Grupos preferidos</h2>
                 <p class="inline-list">Queen · Belle and Sebastian · Have Heart · Crema / C Tangana</p>
-            </div>
+            </section>
         </div>
     </div>
 </div>

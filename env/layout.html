@@ -2,20 +2,20 @@
 <html lang="es">
     {% include "header.html" %}
 	<body>
+		<a class="skip-link" href="#colorlib-content">Saltar al contenido</a>
 		<div id="colorlib-page">
             {% include "nav-bar.html" %}
 
 			<div id="colorlib-main">
-                {% block content %}
-				{% endblock %}
+				<main id="colorlib-content" tabindex="-1">
+					{% block content %}
+					{% endblock %}
+				</main>
 
-                {% include "footer.html" %}
+				{% include "footer.html" %}
+			</div>
+		</div>
 
-			</div><!-- END COLORLIB-MAIN -->
-		</div><!-- END COLORLIB-PAGE -->
-
-  		<!-- loader and js -->
-        {% include "loader.html" %}
-
+		{% include "loader.html" %}
 	</body>
 </html>

@@ -1,24 +1,61 @@
+{% set page = config.page_meta[page_name] %}
+{% set page_url = config.web_metadata.url + ('/' if page_name != 'index' else '/') + (page_name + '.html' if page_name != 'index' else '') %}
 <head>
-    <title> {{ config.web_metadata.title }}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:image" content="{{ config.web_metadata.image }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ config.web_metadata.url }}" />
-    <meta property="og:title" content="{{ config.web_metadata.title }}" />
-    <meta property="og:description" content="{{ config.web_metadata.description }}" />
-    <meta name="description" content="{{ config.web_metadata.description_frontcover }}" />
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="{{ config.web_metadata.author }}">
+    <meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="canonical" href="{{ page_url }}">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <meta property="og:site_name" content="{{ config.web_metadata.author }}">
+    <meta property="og:type" content="{% if page_name == 'index' or page_name == 'sobremi' %}profile{% else %}website{% endif %}">
+    <meta property="og:locale" content="{{ config.web_metadata.locale }}">
+    <meta property="og:url" content="{{ page_url }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ config.web_metadata.image }}">
+    <meta property="og:image:alt" content="Retrato de {{ config.web_metadata.author }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ config.web_metadata.twitter }}">
+    <meta name="twitter:creator" content="{{ config.web_metadata.twitter }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="{{ config.web_metadata.image }}">
+
+    {% if page_name == 'index' or page_name == 'sobremi' %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ config.web_metadata.author }}",
+        "url": "{{ config.web_metadata.url }}",
+        "image": "{{ config.web_metadata.image }}",
+        "jobTitle": "Data Engineer",
+        "worksFor": { "@type": "Organization", "name": "Kairós Digital Solutions" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "AFI Escuela de Finanzas" },
+            { "@type": "CollegeOrUniversity", "name": "Universidad Nacional de Educación a Distancia" },
+            { "@type": "CollegeOrUniversity", "name": "Universidad Politécnica de Madrid" }
+        ],
+        "knowsAbout": ["Data Engineering", "ETL/ELT", "Apache Airflow", "ClickHouse", "Snowflake", "Python", "SQL", "Kubernetes", "Docker", "CI/CD", "LangChain", "Large Language Models", "Machine Learning", "Deep Learning"],
+        "sameAs": {{ config.web_metadata.same_as | tojson }}
+    }
+    </script>
+    {% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
     <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon2.ico">
-    <link rel="shortcut icon" href="/images/favicon2.ico">
 </head>

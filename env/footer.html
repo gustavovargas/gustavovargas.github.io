@@ -1,29 +1,23 @@
-<footer class="ftco-footer ftco-bg-dark ftco-section" style="padding-top: 60px; padding-bottom: 45px;">
-    <div class="col-md px-md-5">
-        <div class="ftco-footer-widget mb-4">
+<!-- Base template originally by Colorlib (https://colorlib.com) — licensed CC BY 3.0. Heavily modified. -->
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="footer-inner">
+        <div class="ftco-footer-widget">
             <h2 class="ftco-heading-2">Contacto</h2>
-            <div class="block-23">
-                <ul>
-                    <li> 
-                        <span class="icon icon-map-marker"></span>
-                        <span class="text">Madrid, España</span>
-                    </li>
-                    <li>
-                        <a href="mailto:ge.vargasn@gmail.com">
-                            <span class="icon icon-envelope"></span> 
-                            <span class="text">ge.vargasn@gmail.com</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="footer-contact">
+                <li>
+                    <span class="icon icon-map-marker" aria-hidden="true"></span>
+                    <span class="text">Madrid, España</span>
+                </li>
+                <li>
+                    <a href="mailto:ge.vargasn@gmail.com">
+                        <span class="icon icon-envelope" aria-hidden="true"></span>
+                        <span class="text">ge.vargasn@gmail.com</span>
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Plantilla hecha por <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-        </div>
+        <p class="footer-copy">Copyright &copy;<span id="footer-year"></span> &middot; Gustavo Vargas Núñez</p>
     </div>
 </footer>
+<script>document.getElementById('footer-year').textContent=new Date().getFullYear();</script>
