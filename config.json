@@ -1,19 +1,49 @@
 {
     "web_metadata": {
         "title": "Gustavo Vargas Núñez",
-        "image": "https://raw.githubusercontent.com/gustavovargas/gustavovargas.github.io/master/images/author.jpg",
-        "url": "https://gustavovargas.github.io/index.html",
-        "description": "Data Engineer & Data Scientist",
-        "description_frontcover": "Data Engineer & Data Scientist en Kairós Digital Solutions. Master en Data Science y Big Data por AFI. Certificado como Google Cloud Professional Data Engineer"
+        "image": "https://gustavovargas.github.io/images/foto_gustavo_02.jpg",
+        "url": "https://gustavovargas.github.io",
+        "description": "Data Engineer",
+        "description_frontcover": "Data engineer y AI engineer en Kairós Digital Solutions. Diseño pipelines y llevo a producción servicios de datos y de IA.",
+        "author": "Gustavo Vargas Núñez",
+        "locale": "es_ES",
+        "twitter": "@gvarnu",
+        "same_as": [
+            "https://github.com/gustavovargas",
+            "https://www.linkedin.com/in/gustavovargas2/",
+            "https://x.com/gvarnu",
+            "https://www.instagram.com/gvarnu/"
+        ]
+    },
+    "page_meta": {
+        "index": {
+            "title": "Gustavo Vargas Núñez · Data Engineer",
+            "description": "Web personal de Gustavo Vargas Núñez. Data engineer especializado en pipelines de datos, puesta en producción y, últimamente, integración de LLMs."
+        },
+        "articulos": {
+            "title": "Artículos y tutoriales · Gustavo Vargas",
+            "description": "Artículos y tutoriales sobre machine learning, deep learning, finanzas cuantitativas y Python."
+        },
+        "traducciones": {
+            "title": "Traducciones · Gustavo Vargas",
+            "description": "Traducciones y revisiones al español de textos de economía y finanzas (Fekete, Hazlitt, Caplan, Buchanan, Palyi, Vernon Smith)."
+        },
+        "charlas": {
+            "title": "Charlas y debates · Gustavo Vargas",
+            "description": "Charlas, entrevistas y moderaciones de debate sobre economía monetaria, teoría financiera y política."
+        },
+        "sobremi": {
+            "title": "Sobre mí · Gustavo Vargas",
+            "description": "Trayectoria, educación, experiencia e intereses de Gustavo Vargas Núñez, data engineer en Kairós Digital Solutions / El Confidencial."
+        }
     },
     "navbar":{
         "title": "gustavo",
         "pages": {
             "index": "Índice",
             "articulos": "Artículos",
-            "tutoriales": "Tutoriales",
             "traducciones": "Traducciones",
-            "otros": "Otros",
+            "charlas": "Charlas",
             "sobremi": "Sobre mí"
         }
     },
@@ -21,109 +51,117 @@
         {
             "title": "Reinforcement Learning for Trading",
             "link": "https://quantdare.com/reinforcement-learning-for-trading/",
+            "description": "Publicado en Quantdare.",
             "date": "16/12/2020",
-            "type": "link"
+            "type": "article"
         },
         {
             "title": "Generating OHLC bars with Generative Adversarial Networks",
             "link": "https://quantdare.com/generating-open-high-low-close-bars-with-gans",
+            "description": "Publicado en Quantdare.",
             "date": "30/01/2020",
-            "type": "link"
+            "type": "article"
         },
         {
             "title": "Geometrical evaluation of Generative Adversarial Networks",
             "link": "https://quantdare.com/geometrical-properties-of-generative-adversarial-networks",
+            "description": "Publicado en Quantdare.",
             "date": "24/07/2019",
-            "type": "link"
-        }
-    ],
-    "tutoriales": [
+            "type": "article"
+        },
         {
-            "title": "Tutorial de expresiones regulares",
+            "title": "Tutorial de expresiones regulares en Python",
             "link": "files/expresiones_regulares.html",
-            "description": "Python",
-            "type": "link"
+            "description": "Guía práctica con ejemplos resueltos.",
+            "type": "tutorial"
         }
     ],
     "traducciones": [
         {
-            "title": "Antal Fekete - Análisis del desequilibrio en la formación de precios",
+            "title": "Análisis del desequilibrio en la formación de precios",
+            "author": "Antal Fekete",
             "link": "files/Fekete-Análisis_del_desequilibrio_en_la_formación_de_precios.pdf",
-            "description": "Revisión técnica. Autora: Sara Marín",
+            "description": "Revisión técnica de la traducción al español por Sara Marín.",
             "type": "pdf"
         },
         {
-            "title": "Bryan Caplan - Razones para no ser un economista austriaco",
+            "title": "Razones para no ser un economista austriaco",
+            "author": "Bryan Caplan",
             "link": "files/Caplan-Razones_para_no_ser_un_economista_austriaco.pdf",
-            "description": "Revisión técnica. Autora: Sara Marín",
+            "description": "Revisión técnica de la traducción al español por Sara Marín.",
             "type": "pdf"
         },
         {
-            "title": "Antal Fekete - Los Errores de Mises",
+            "title": "Los errores de Mises",
+            "author": "Antal Fekete",
             "link": "files/Fekete-Los_Errores_de_Mises.pdf",
-            "description": "Revisión técnica. Autora: Sara Marín",
+            "description": "Revisión técnica de la traducción al español por Sara Marín.",
             "type": "pdf"
         },
         {
-            "title": "Henry Hazlitt - La Economía en una Lección",
+            "title": "La economía en una lección",
+            "author": "Henry Hazlitt",
             "link": "files/Hazlitt-La_Economía_en_una_Lección.pdf",
-            "description": "Revisión y corrección. Autor: Adolfo Rivero",
+            "description": "Revisión y corrección de la traducción al español por Adolfo Rivero.",
             "type": "pdf"
         },
         {
-            "title": "James Buchanan - Notas sobre Hayek",
+            "title": "Notas sobre Hayek",
+            "author": "James Buchanan",
             "link": "files/Buchanan_Notas_sobre_Hayek.pdf",
-            "description": "Traductor",
+            "description": "Traducción al español.",
             "type": "pdf"
         },
         {
-            "title": "Melchior Palyi - Liquidez",
+            "title": "Liquidez",
+            "author": "Melchior Palyi",
             "link": "files/Palyi-Liquidez.pdf",
-            "description": "Traductor",
+            "description": "Traducción al español.",
             "type": "pdf"
         },
         {
-            "title": "Vernon Smith - La Acción Humana, 50 años después",
+            "title": "La Acción Humana, 50 años después",
+            "author": "Vernon Smith",
             "link": "files/Smith-La_Acción_Humana_50_años_después.pdf",
-            "description": "Traductor",
+            "description": "Traducción al español.",
             "type": "pdf"
         }
     ],
-    "otros": [
+    "charlas": [
         {
             "title": "'Principios de Economía Financiera' de Rafael García Iborra",
             "link": "https://www.youtube.com/watch?v=I8VopPYfZ0U",
-            "description": "Acompañé al autor en la presentación de su libro, donde expone una microfundamentación de su teoría del ciclo económico donde recurre a muchas ideas de la teoría financiera actual",
+            "description": "Acompañé al autor en la presentación de su libro, donde expone una microfundamentación de su teoría del ciclo económico apoyándose en la teoría financiera moderna.",
             "type": "video"
         },
         {
-            "title": "Otra Vuelta de Tuerka - ¿Por qué votan los ancianos a sus verdugos?",
+            "title": "Otra Vuelta de Tuerka — ¿Por qué votan los ancianos a sus verdugos?",
             "link": "https://www.youtube.com/watch?v=cvYFXaQK3Qc",
-            "description": "Participé en el programa Otra Vuelta de Tuerka donde debatimos sobre el futuro de las pensiones",
+            "description": "Participé en el programa Otra Vuelta de Tuerka para debatir sobre el futuro de las pensiones.",
             "type": "video"
         },
         {
             "title": "Entrevista a Daniel Fernández sobre teoría monetaria",
             "link": "https://www.youtube.com/watch?v=VC5Z20y5_x4",
-            "description": "Entrevista sobre teoría monetaria y bancaria con el experto Daniel Fernández",
+            "description": "Entrevista sobre teoría monetaria y bancaria con el economista Daniel Fernández.",
             "type": "video"
         },
         {
             "title": "Debate sobre el aborto",
             "link": "https://www.youtube.com/watch?v=dV3GvNRixcw",
-            "description": "Modero un debate sobre el aborto, con José Luis Ricón, Eladio García y José Augusto Domínguez como invitados",
+            "description": "Moderación del debate entre José Luis Ricón, Eladio García y José Augusto Domínguez.",
             "type": "video"
         },
         {
             "title": "Diez años del Juan de Mariana",
             "link": "https://www.youtube.com/watch?v=sxFEzmZMnPM",
-            "description": "Hablo con Francisco Capella y Jorge García sobre los 10 primeros años del Instituto Juan de Mariana",
+            "description": "Conversación con Francisco Capella y Jorge García sobre la primera década del Instituto Juan de Mariana.",
             "type": "video"
         },
         {
             "title": "Debate sobre la Teoría Monetaria Moderna",
             "link": "https://www.youtube.com/watch?v=mb2rq2JOwJA",
-            "description": "Modero el debate entre los economistas Eduardo Garzón y Juan Ramón Rallo sobre la teoría monetaria moderna",
+            "description": "Moderación del debate entre Eduardo Garzón y Juan Ramón Rallo sobre la teoría monetaria moderna.",
             "type": "video"
         }
     ]

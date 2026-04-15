@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="hero-wrap hero-wrap-2">
+    <div class="content-section">
+        <div class="content-container">
+            <header class="list-header">
+                <h1>Charlas y debates</h1>
+                <p class="list-kicker">Entrevistas, moderaciones y presentaciones sobre economía monetaria, teoría financiera y política.</p>
+            </header>
+            <ul class="content-list" role="list">
+            {% for articulo in config.charlas %}
+                <li class="content-card">
+                    <div class="content-card-header">
+                        <h3><a href="{{ articulo.link }}" target="_blank" rel="noopener">{{ articulo.title }}</a></h3>
+                        {% if articulo.type == 'pdf' %}
+                        <span class="content-badge badge-pdf">PDF</span>
+                        {% elif articulo.type == 'video' %}
+                        <span class="content-badge badge-video">Vídeo</span>
+                        {% endif %}
+                    </div>
+                    {% if articulo.date %}
+                    <time class="content-date" datetime="{{ articulo.date.split('/') | reverse | join('-') }}">{{ articulo.date }}</time>
+                    {% endif %}
+                    {% if articulo.description %}
+                    <p class="content-description">{{ articulo.description }}</p>
+                    {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}
