@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="hero-wrap hero-wrap-2">
+    <div class="hero-inner">
+        <p class="subheading">Error 404</p>
+        <h1>Página no encontrada</h1>
+        <p class="hero-bio">La página que buscas no existe o ha cambiado de sitio. Desde aquí puedes volver al inicio o ir a una de las secciones principales.</p>
+        <p><a href="/" class="btn-custom-cta">Volver al inicio <span class="ion-ios-arrow-forward" aria-hidden="true"></span></a></p>
+    </div>
+</section>
+
+<section class="content-section highlights">
+    <div class="content-container">
+        <h2 class="highlights-title">Secciones</h2>
+        <div class="highlights-grid">
+            <a href="/articulos.html" class="highlight-card">
+                <span class="highlight-kicker">Artículos y tutoriales</span>
+                <span class="highlight-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="/traducciones.html" class="highlight-card">
+                <span class="highlight-kicker">Traducciones</span>
+                <span class="highlight-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="/charlas.html" class="highlight-card">
+                <span class="highlight-kicker">Charlas y debates</span>
+                <span class="highlight-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="/sobremi.html" class="highlight-card">
+                <span class="highlight-kicker">Sobre mí</span>
+                <span class="highlight-arrow" aria-hidden="true">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

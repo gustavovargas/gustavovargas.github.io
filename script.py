@@ -9,6 +9,12 @@ template_env = Environment(loader=FileSystemLoader(searchpath='./env'))
 with open('config.json', encoding="utf-8") as config_file:
     config = load(config_file)
 
+MESES_ES = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+            "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+_today = date.today()
+config['build_date'] = _today.isoformat()
+config['build_date_human'] = f"{MESES_ES[_today.month - 1]} de {_today.year}"
+
 ######## INDEX
 template = template_env.get_template('portada.html')
 with open('index.html', 'w', encoding="utf-8") as output_file:
@@ -33,6 +39,11 @@ with open('charlas.html', 'w', encoding="utf-8") as output_file:
 template = template_env.get_template('cuadro.html')
 with open('sobremi.html', 'w', encoding="utf-8") as output_file:
     output_file.write(template.render(config=config, page_name='sobremi'))
+
+######## 404
+template = template_env.get_template('404.html')
+with open('404.html', 'w', encoding="utf-8") as output_file:
+    output_file.write(template.render(config=config, page_name='404'))
 
 ######## REDIRECTS (mantener URLs antiguas vivas)
 redirect_template = '''<!DOCTYPE html>

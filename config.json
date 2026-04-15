@@ -35,6 +35,10 @@
         "sobremi": {
             "title": "Sobre mí · Gustavo Vargas",
             "description": "Trayectoria, educación, experiencia e intereses de Gustavo Vargas Núñez, data engineer en Kairós Digital Solutions / El Confidencial."
+        },
+        "404": {
+            "title": "Página no encontrada · Gustavo Vargas",
+            "description": "La página que buscas no existe o ha cambiado de sitio."
         }
     },
     "navbar":{
